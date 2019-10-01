@@ -19,7 +19,7 @@
 ** Pre-conditions: none
 ** Post-conditions: none
 *************************************************************************/
-Barbarian::Barbarian() : Character(2, 6, 2, 6, 0, 12, false, 
+Barbarian::Barbarian() : Character(2, 6, 2, 6, 0, 12.0, 12.0, false, 
 	"Barbarian") {}
 
 /*************************************************************************

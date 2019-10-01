@@ -1,7 +1,7 @@
 /*************************************************************************
 ** Program Filename: Shadow.cpp
 ** Author: Chase Tucker
-** Date: 7/23/15
+** Creation Date: 7/23/15 // Last Update: 10/1/19
 ** Description: This file provides the implementation for the Shadow class
 ** Input: none
 ** Output: none
@@ -19,7 +19,7 @@
 ** Pre-conditions: none
 ** Post-conditions: none
 *************************************************************************/
-Shadow::Shadow() : Character(2, 10, 1, 6, 0, 12, false, "The Shadow") {}
+Shadow::Shadow() : Character(2, 10, 1, 6, 0, 12.0, 12.0, false, "The Shadow") {}
 
 /*************************************************************************
 ** Function: attack

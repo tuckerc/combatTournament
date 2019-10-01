@@ -2,7 +2,7 @@
 ** Program Filename: DynCharacterQueue.hpp
 ** Author: Chase Tucker, Tony Gaddis, Judy Waters, Godfrey Muganda (See
 **   reference below)
-** Date: 7/26/15
+** Creation Date: 7/23/15 // Last Update: 10/1/19
 ** Description: This file provides the interface for the DynCharacterQueue
 **   class. The code in Starting out with C++ : early objects was used to
 **   develop this queue interface.
@@ -17,7 +17,7 @@
 #ifndef DynCharacterQueue_HPP
 #define DynCharacterQueue_HPP
 
-#include "Character.hpp""
+#include "Character.hpp"
 
 class DynCharacterQueue
 {

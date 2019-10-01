@@ -1,7 +1,7 @@
 /*************************************************************************
 ** Program Filename: Shadow.hpp
 ** Author: Chase Tucker
-** Date: 7/23/15
+** Creation Date: 7/23/15 // Last Update: 10/1/19
 ** Description: This file contains the interface for the Shadow class.
 ** Input: none
 ** Output: none

@@ -1,7 +1,7 @@
 /*************************************************************************
 ** Program Filename: Goblin.cpp
 ** Author: Chase Tucker
-** Date: 7/23/15
+** Creation Date: 7/23/15 // Last Update: 10/1/19
 ** Description: This file provides the implementation for the Goblin class
 ** Input: none
 ** Output: none
@@ -19,7 +19,7 @@
 ** Pre-conditions: none
 ** Post-conditions: none
 *************************************************************************/
-Goblin::Goblin() : Character(2, 6, 1, 6, 3, 8, false, "Goblin") {}
+Goblin::Goblin() : Character(2, 6, 1, 6, 3, 8.0, 8.0, false, "Goblin") {}
 
 /*************************************************************************
 ** Function: attack

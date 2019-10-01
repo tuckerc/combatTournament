@@ -1,7 +1,7 @@
 /*************************************************************************
 ** Program Filename: ReptilePerson.cpp
 ** Author: Chase Tucker
-** Date: 7/23/15
+** Creation Date: 7/23/15 // Last Update: 10/1/19
 ** Description: This file provides the implementation for the 
 **   ReptilePerson class.
 ** Input: none
@@ -21,7 +21,7 @@
 ** Pre-conditions: none
 ** Post-conditions: none
 *************************************************************************/
-ReptilePerson::ReptilePerson() : Character(3, 6, 1, 6, 7, 18, false,
+ReptilePerson::ReptilePerson() : Character(3, 6, 1, 6, 7, 18.0, 18.0, false,
 	"Reptile Person") {}
 
 /*************************************************************************
