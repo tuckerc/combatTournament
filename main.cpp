@@ -1,7 +1,7 @@
 /*************************************************************************
 ** Program Filename: Main.cpp
 ** Author: Chase Tucker
-** Date: 8/3/15
+** Last Update: 10/2/19 // Create Date: 8/13/15
 ** Description: This file provides the main function for the Combat
 **    Tournament Game.
 ** Input: none
@@ -52,12 +52,12 @@ int main()
 			loserStack.push(tempCharacter);
 
 		//replenish fighter strength by 50% of expended
-		Character* fighter = team1.getTeamQueue()->getFront();
-		while (team1.getTeamQueue()->getFront() != fighter)
+		Character* fighter = team1.getTeamQueue()->getFront;
+		while (team1.getTeamQueue()->getFront != fighter)
 		{
-			team1.getTeamQueue()->getFront()->addStrength((team1.
-				getTeamQueue()->getFront()->getStrength())*1.5);
-			Character* tempCharacter = team1.getTeamQueue()->getFront();
+			team1.getTeamQueue()->getFront->addStrength((team1.
+				getTeamQueue()->getFront->getStrength())*1.5);
+			Character* tempCharacter = team1.getTeamQueue()->getFront;
 			team1.getTeamQueue()->removeFront();
 			team1.getTeamQueue()->addBack(tempCharacter);
 		}
@@ -86,8 +86,8 @@ Character* battle(CombatTeam* t1, CombatTeam* t2)
 	{
 		rounds++;
 		std::cout << "Round: " << rounds << std::endl << std::endl;
-		std::cout << t1->getTeamQueue->getFront->getName << " attacks "
-			<< t2->getTeamQueue->getFront->getName;
+		std::cout << t1->getTeamQueue->getFront->getName() << " attacks "
+			<< t2->getTeamQueue->getFront->getName();
 		std::cout << std::endl << std::endl;
 		
 		int damage; //int for damage total
@@ -101,13 +101,13 @@ Character* battle(CombatTeam* t1, CombatTeam* t2)
 			t1->addTeamPts(damage);
 		}
 
-		std::cout << t1->getTeamQueue->getFront->getName << " strength: " 
-			<< t1->getTeamQueue->getFront->getStrength << std::endl;
-		std::cout << t2->getTeamQueue->getFront->getName << " strength: " 
-			<< t2->getTeamQueue->getFront->getStrength << std::endl 
+		std::cout << t1->getTeamQueue->getFront->getName() << " strength: " 
+			<< t1->getTeamQueue->getFront->getStrength() << std::endl;
+		std::cout << t2->getTeamQueue->getFront->getName() << " strength: " 
+			<< t2->getTeamQueue->getFront->getStrength() << std::endl 
 			<< std::endl;
-		std::cout << t2->getTeamQueue->getFront->getName << " attacks "
-			<< t1->getTeamQueue->getFront->getName;
+		std::cout << t2->getTeamQueue->getFront->getName() << " attacks "
+			<< t1->getTeamQueue->getFront->getName();
 		std::cout << std::endl << std::endl;
 
 		damage = (t2->getTeamQueue->getFront->
@@ -121,20 +121,20 @@ Character* battle(CombatTeam* t1, CombatTeam* t2)
 		}
 
 		t2->getTeamQueue->getFront->attack(t1->getTeamQueue->getFront);
-        std::cout << t1->getTeamQueue->getFront->getName 
-			<< " strength: " << t1->getTeamQueue->getFront->getStrength 
+        std::cout << t1->getTeamQueue->getFront->getName() 
+			<< " strength: " << t1->getTeamQueue->getFront->getStrength()
 			<< std::endl;
-		std::cout << t2->getTeamQueue->getFront->getName << " strength: " 
-			<< t2->getTeamQueue->getFront->getStrength << std::endl 
+		std::cout << t2->getTeamQueue->getFront->getName() << " strength: " 
+			<< t2->getTeamQueue->getFront->getStrength() << std::endl 
 			<< std::endl;
 	}
 
 	//case if team 1 wins
-	if (t1->getTeamQueue->getFront->getStrength > 0 &&
-		t2->getTeamQueue->getFront->getStrength <= 0)
+	if (t1->getTeamQueue->getFront->getStrength() > 0 &&
+		t2->getTeamQueue->getFront->getStrength() <= 0)
 	{
-		std::cout << t1->getTeamQueue->getFront->getName << " defeats ";
-		std::cout << t2->getTeamQueue->getFront->getName << " after ";
+		std::cout << t1->getTeamQueue->getFront->getName() << " defeats ";
+		std::cout << t2->getTeamQueue->getFront->getName() << " after ";
 		std::cout << rounds << " rounds!" << std::endl;
 		
 		//return team 1 combatant to end of queue
@@ -149,11 +149,11 @@ Character* battle(CombatTeam* t1, CombatTeam* t2)
 	}
 
 	//case if team 2 wins
-	else if (t2->getTeamQueue->getFront->getStrength > 0 &&
-		     t1->getTeamQueue->getFront->getStrength <= 0)
+	else if (t2->getTeamQueue->getFront->getStrength() > 0 &&
+		     t1->getTeamQueue->getFront->getStrength() <= 0)
 	{
-		std::cout << t2->getTeamQueue->getFront->getName << " defeats ";
-		std::cout << t1->getTeamQueue->getFront->getName << " after ";
+		std::cout << t2->getTeamQueue->getFront->getName() << " defeats ";
+		std::cout << t1->getTeamQueue->getFront->getName() << " after ";
 		std::cout << rounds << " rounds!" << std::endl;
 
 		//return team 2 combatant to end of queue
@@ -168,8 +168,8 @@ Character* battle(CombatTeam* t1, CombatTeam* t2)
 	}
 
 	//case if tie
-	else if (t1->getTeamQueue->getFront->getStrength <= 0 &&
-		     t2->getTeamQueue->getFront->getStrength <= 0)
+	else if (t1->getTeamQueue->getFront->getStrength() <= 0 &&
+		     t2->getTeamQueue->getFront->getStrength() <= 0)
 	{
 		std::cout << "The combat ended in a tie after ";
 		std::cout << rounds << " rounds!" << std::endl;
